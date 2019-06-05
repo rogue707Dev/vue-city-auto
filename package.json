@@ -1,7 +1,7 @@
 {
   "name": "vue-city",
   "description": "Vue-City is a VueJS component that offer an autocomplete city input.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

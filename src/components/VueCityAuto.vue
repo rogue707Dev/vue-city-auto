@@ -40,7 +40,7 @@
     import Autocomplete from "vuejs-auto-complete";
 
     export default {
-        name: 'vue-city',
+        name: 'vue-city-auto',
         components: {
             Autocomplete
         },
