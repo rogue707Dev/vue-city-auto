@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <vue-city data="https://api-adresse.data.gouv.fr/search/?q="
+              :multiple="true"
+              data_to_get="city"
+              result_property="features"
+              input_class="form-control"
+              size_font="1"
+              label="cp">
+    </vue-city>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CityComponent from './components/CityComponent.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    'vue-city' : CityComponent
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

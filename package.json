@@ -1,15 +1,21 @@
 {
   "name": "vue-city",
+  "description": "Vue-City is a VueJS component that offer an autocomplete city input.",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://MLebeauAyctor@bitbucket.org/MLebeauAyctor/vue-city.git"
+  },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vuejs-auto-complete": "^0.9.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
