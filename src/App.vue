@@ -6,18 +6,18 @@
               result_property="features"
               input_class="form-control"
               size_font="1"
-              label="cp">
+              label="city">
     </vue-city>
   </div>
 </template>
 
 <script>
-import CityComponent from './components/CityComponent.vue'
+import VueCity from './components/VueCity.vue'
 
 export default {
   name: 'app',
   components: {
-    'vue-city' : CityComponent
+    'vue-city' : VueCity
   }
 }
 </script>
