@@ -40,8 +40,8 @@ And in your blade template or html :
 | Prop                  | Type                        | Required | Default   | Description |
 |-----------------------|-----------------------------|----------|-----------|-------------|
 | multiple              | Boolean                     |          | false     | for multiple selectable adresses|
-| source                | String                      |    X     | https://api-adresse.data.gouv.fr/search/?q=         | api url to make request to|
-| result_property       | String                      |    X     | features | Based on the API answer object where results are stored|
+| source                | String                      |         | https://api-adresse.data.gouv.fr/search/?q=         | api url to make request to|
+| result_property       | String                      |         | features | Based on the API answer object where results are stored|
 | input_class          | String                       |    X     |   form-control        | Class of the input|
 | size_font          | Integer                       |    X     |   1        | Font size in rem|
 | label          | String                       |    X     |           | Name of your hidden input field|

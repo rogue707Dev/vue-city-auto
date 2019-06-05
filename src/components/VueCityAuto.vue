@@ -45,10 +45,19 @@
             Autocomplete
         },
         props: {
-            data: null,
-            label: null,
+            data: {
+                type: String,
+                default: 'https://api-adresse.data.gouv.fr/search/?q=',
+            },
+            label: {
+                type: String,
+                default: '',
+            },
             input_class: null,
-            result_property: null,
+            result_property: {
+                type: String,
+                default: 'features',
+            },
             data_to_get: null,
             size_font: null,
             multiple: Boolean,
@@ -74,25 +83,10 @@
             },
             addElement(element) {
                 var data_to_grab = '';
-                switch (this.data_to_get) {
-                    case 'postcode':
-                        data_to_grab = element.selectedObject.properties.postcode;
-                        break;
-                    case 'address':
-                        data_to_grab = element.selectedObject.properties.label;
-                        break;
-                    case 'name':
-                        data_to_grab = element.selectedObject.properties.name;
-                        break;
-                    case 'city':
-                        data_to_grab = element.selectedObject.properties.city;
-                        break;
-                    case 'citycode':
-                        data_to_grab = element.selectedObject.properties.citycode;
-                        break;
-                    default:
-                        // console.log('Sorry, we are out of ' + this.data_to_get + '.');
-                        break;
+
+                if (this.data_to_get) {
+                    const propertie = element.selectedObject.properties[this.data_to_get];
+                    data_to_grab = (propertie) ? propertie : '';
                 }
 
                 if (this.multiple !== undefined) {

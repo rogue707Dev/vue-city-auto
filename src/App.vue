@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <vue-city-auto data="https://api-adresse.data.gouv.fr/search/?q="
-              :multiple="true"
+    <vue-city-auto
               data_to_get="city"
-              result_property="features"
               input_class="form-control"
               size_font="1"
               label="city">
