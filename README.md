@@ -1,6 +1,6 @@
-# Vue-city
+# Vue-City-Auto
 
-Vue-City is a VueJS component of an autocomplete city input.
+Vue-City-Auto is a VueJS component of an autocomplete city input.
 
 ## Project setup
 ```bash
